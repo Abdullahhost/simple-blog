@@ -121,7 +121,7 @@ export default async function Home({ searchParams }: any) {
                         }
                     </div>
                     <div>
-                        {page > totalPage - 1 ? (
+                        {itemCount !== 0 ? page > totalPage - 1 ? (
                             <>
                                 <div aria-disabled={true}></div>
                             </>
@@ -131,7 +131,7 @@ export default async function Home({ searchParams }: any) {
                                     Next
                                 </Link>
                             </>
-                        )}
+                        ): ""}
                     </div>
                 </div>
             </div>
