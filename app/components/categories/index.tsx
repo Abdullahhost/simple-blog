@@ -17,7 +17,7 @@ const Categories = async () => {
         <div className="w-full md:w-fit mr-6">
             <div className=" w-full my-[50px] md:my-[0px] px-10  md:px-4  md:max-w-[300px] md:min-w-[300px] md:mr-6 lg:mr-0">
                 <h4 className=" bg-slate-200 text-center md:text-start dark:bg-[#3d3d3d] p-2 mb-4 dark:text-white border-b-[#5555552f] dark:border-b-[#399B19] border-b-2 ">Categories</h4>
-                {uniqueRoles?.map((ele: string) => {
+                {uniqueRoles?.map((ele: any) => {
                     return <div key={ele} className="text-center md:text-start leading-8">
                         <li className="text-[#4e4e4e] hover:underline dark:text-[#d6d7d8]" style={{ listStyleType: "none" }}>
                             <div className="flex items-start gap-4 flex-row ">
