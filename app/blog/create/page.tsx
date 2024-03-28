@@ -4,7 +4,7 @@ import SideBar from '@/app/components/header/sidebar';
 import Topbar from '@/app/components/header/topbar';
 import Input from '@/app/login/components/Input';
 import axios from 'axios';
-import { CldUploadButton, CldUploadWidgetResults } from 'next-cloudinary';
+import { CldUploadButton, CloudinaryUploadWidgetResults } from 'next-cloudinary';
 import { useState } from 'react';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
@@ -40,7 +40,7 @@ const page = () => {
         console.log(blogData)
 
     };
-    const handleClick = (result: CldUploadWidgetResults) => {
+    const handleClick = (result: CloudinaryUploadWidgetResults) => {
         const info = result?.info as object;
 
         if ("secure_url" in info && "public_id" in info) {
